@@ -1,0 +1,6 @@
+# Variable overrides for the vantage-slurm plan. Every key is optional.
+# Use: uvx v8x app juju deploy vantage-slurm --config vantage-slurm-variable-overrides.yaml
+model_name: slurm
+channel: latest/edge
+compute_units: 1
+slurm_constraints: cores=1 mem=2048M root-disk=10G virt-type=virtual-machine

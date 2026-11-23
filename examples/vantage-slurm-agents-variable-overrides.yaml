@@ -1,0 +1,5 @@
+# Variable overrides for the vantage-slurm-agents plan.
+# Use: uvx v8x app juju deploy vantage-slurm-agents --cluster on-prem-slurm --config vantage-slurm-agents-variable-overrides.yaml
+# With --cluster, v8x sets vantage_url, client_id and client_secret from the cluster record.
+model_name: slurm
+channel: latest/edge
